@@ -13,8 +13,13 @@ class Tarefas extends Component
 
     public function render()
     {
-        $this->dados =  Categorias::with('tarefas')->get();
-        return view('livewire.tarefas');
+        try{
+            $this->dados =  Categorias::with('tarefas')->get();
+            return view('livewire.tarefas');
+        }catch(Exception $e)
+        {
+            dd($e);
+        }
     }
 
     public function exclusao($id)
