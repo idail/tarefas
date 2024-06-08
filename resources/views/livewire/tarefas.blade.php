@@ -68,10 +68,10 @@
                                     </svg>
                                 </a>
                             </td>
-                            <td>
+                            <td style="width: 2%;">
                                 <a class="flex items-center bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition-colors"
-                                    wire:click="exclusao({{ $tarefa->id }})" title="Excluir Tarefa">
-                                    <svg class="w-7 h-5 mr-2 text-white" fill="none" viewBox="0 0 24 24"
+                                    wire:click="exclusao({{ $tarefa->id }})" title="Excluir Tarefa" wire:confirm="Tem certeza que deseja excluir a tarefa?">
+                                    <svg class="w-5 h-5 mr-2 text-white" fill="none" viewBox="0 0 24 24"
                                         stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M19 7l-.867 12.142A2 2 0 0116.136 21H7.865a2 2 0 01-1.997-1.858L5 7m5 4v6m4-6v6M1 7h22M8 7V4a1 1 0 011-1h6a1 1 0 011 1v3" />
